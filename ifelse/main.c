@@ -9,7 +9,7 @@ int main() {
     } else if (a == b) {
         printf("a is equal to b\n");
     } else {
-        printf("a is greater than b\n");
+        printf("a is greater than b\n")
     }
 
     int x = 1;
