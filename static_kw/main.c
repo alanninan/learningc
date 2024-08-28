@@ -11,6 +11,6 @@ int runner()
 int main()
 {
     printf("%d ", runner());
-    printf("%d ", runner());
+    printf("%d\n", runner());
     return 0;
 }
