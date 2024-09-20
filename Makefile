@@ -2,8 +2,8 @@
 CC = clang
 CFLAGS = -Wall -Werror
 
-# Find all subdirectories
-SUBDIRS := $(wildcard */)
+# Find all subdirectories and exclude the experiments directory
+SUBDIRS := $(filter-out experiments/, $(wildcard */))
 
 # Define the target executables, one for each subdirectory
 TARGETS := $(SUBDIRS:%=%main)
@@ -18,3 +18,5 @@ all: $(TARGETS)
 # Clean up all generated executables
 clean:
 	rm -f $(TARGETS)
+
+
